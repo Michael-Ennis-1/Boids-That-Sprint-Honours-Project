@@ -44,7 +44,7 @@ void BoidPhysicsSystem::RegisterBoids(BoidObject* BoidToRegister, bool RandomlyI
 
 void BoidPhysicsSystem::RegisterBoids(std::vector<BoidObject*> BoidsToRegister, bool RandomlyInitializeDirection)
 {
-	if (BoidsToRegister[0])
+	if (BoidsToRegister.size() > 0)
 	{
 		int NumberOfBoidsToRegister = BoidsToRegister.size();
 		for (int i = 0; i < NumberOfBoidsToRegister; i++)
@@ -80,7 +80,7 @@ void BoidPhysicsSystem::UpdateBoidPhysics(float DeltaTime)
 	std::vector<XMFLOAT3> NewBoidPos;
 	std::vector<XMFLOAT3> NewBoidDir;
 
-	if (m_RegisteredBoids[0])
+	if (m_RegisteredBoids.size() > 0)
 	{
 		int NumberOfRegisteredBoids = m_RegisteredBoids.size();
 		for (int i = 0; i < NumberOfRegisteredBoids; i++)
