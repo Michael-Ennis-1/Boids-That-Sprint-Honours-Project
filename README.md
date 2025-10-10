@@ -5,3 +5,6 @@ Asynchronous compute techniques involved executing both the render and compute p
 Link to the original repository here: https://github.com/jpvanoosten/LearningDirectX12/tree/v0.0.4 
 
 Link to tutorial series followed: https://www.3dgep.com/learning-directx-12-1/ by Jeremiah, 2017 
+
+For more information, check out my Boids That Sprint page:
+https://www.portfoliomichaelennis.com/boids-that-sprint
